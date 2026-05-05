@@ -1,0 +1,162 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="MCD_FilmTracker" name="MCD - Film Tracker">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- ═══════════════════════════════════════════ -->
+        <!-- ENTITE : Utilisateur (centre haut)          -->
+        <!-- ═══════════════════════════════════════════ -->
+        <mxCell id="user" value="Utilisateur" style="swimlane;fontStyle=1;startSize=30;fillColor=#ffffff;strokeColor=#000000;rounded=0;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="350" y="40" width="220" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="u_id" value="&lt;u&gt;identifiant&lt;/u&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;spacingLeft=10;verticalAlign=top;" vertex="1" parent="user">
+          <mxGeometry y="30" width="220" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="u_name" value="name" style="text;strokeColor=none;fillColor=none;align=left;spacingLeft=10;verticalAlign=top;" vertex="1" parent="user">
+          <mxGeometry y="55" width="220" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="u_fname" value="first_name" style="text;strokeColor=none;fillColor=none;align=left;spacingLeft=10;verticalAlign=top;" vertex="1" parent="user">
+          <mxGeometry y="80" width="220" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="u_lname" value="last_name" style="text;strokeColor=none;fillColor=none;align=left;spacingLeft=10;verticalAlign=top;" vertex="1" parent="user">
+          <mxGeometry y="105" width="220" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="u_email" value="email" style="text;strokeColor=none;fillColor=none;align=left;spacingLeft=10;verticalAlign=top;" vertex="1" parent="user">
+          <mxGeometry y="130" width="220" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="u_pass" value="mot de passe" style="text;strokeColor=none;fillColor=none;align=left;spacingLeft=10;verticalAlign=top;" vertex="1" parent="user">
+          <mxGeometry y="155" width="220" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="u_date" value="created_at" style="text;strokeColor=none;fillColor=none;align=left;spacingLeft=10;verticalAlign=top;" vertex="1" parent="user">
+          <mxGeometry y="180" width="220" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- ═══════════════════════════════════════════ -->
+        <!-- ASSOCIATION : Ajouter (bas-gauche)          -->
+        <!-- ═══════════════════════════════════════════ -->
+        <mxCell id="ajouter" value="Ajouter" style="rounded=1;arcSize=50;fillColor=#ffffff;strokeColor=#000000;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="110" y="290" width="130" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- ASSOCIATION : Rédiger (bas-droit) -->
+        <mxCell id="rediger" value="Rédiger" style="rounded=1;arcSize=50;fillColor=#ffffff;strokeColor=#000000;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="690" y="290" width="130" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- ═══════════════════════════════════════════ -->
+        <!-- ENTITE : WatchItem (bas-gauche)             -->
+        <!-- ═══════════════════════════════════════════ -->
+        <mxCell id="watchitem" value="WatchItem" style="swimlane;fontStyle=1;startSize=30;fillColor=#ffffff;strokeColor=#000000;rounded=0;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="20" y="420" width="210" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="w_id" value="&lt;u&gt;identifiant&lt;/u&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;spacingLeft=10;verticalAlign=top;" vertex="1" parent="watchitem">
+          <mxGeometry y="30" width="210" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="w_imdb" value="imdb_id" style="text;strokeColor=none;fillColor=none;align=left;spacingLeft=10;verticalAlign=top;" vertex="1" parent="watchitem">
+          <mxGeometry y="55" width="210" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="w_title" value="title" style="text;strokeColor=none;fillColor=none;align=left;spacingLeft=10;verticalAlign=top;" vertex="1" parent="watchitem">
+          <mxGeometry y="80" width="210" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="w_poster" value="poster" style="text;strokeColor=none;fillColor=none;align=left;spacingLeft=10;verticalAlign=top;" vertex="1" parent="watchitem">
+          <mxGeometry y="105" width="210" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="w_year" value="year" style="text;strokeColor=none;fillColor=none;align=left;spacingLeft=10;verticalAlign=top;" vertex="1" parent="watchitem">
+          <mxGeometry y="130" width="210" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="w_status" value="status" style="text;strokeColor=none;fillColor=none;align=left;spacingLeft=10;verticalAlign=top;" vertex="1" parent="watchitem">
+          <mxGeometry y="155" width="210" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="w_date" value="created_at" style="text;strokeColor=none;fillColor=none;align=left;spacingLeft=10;verticalAlign=top;" vertex="1" parent="watchitem">
+          <mxGeometry y="180" width="210" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- ═══════════════════════════════════════════ -->
+        <!-- ENTITE : Avis / Review (bas-droit)          -->
+        <!-- ═══════════════════════════════════════════ -->
+        <mxCell id="review" value="Avis" style="swimlane;fontStyle=1;startSize=30;fillColor=#ffffff;strokeColor=#000000;rounded=0;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="680" y="420" width="220" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="r_id" value="&lt;u&gt;identifiant&lt;/u&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;spacingLeft=10;verticalAlign=top;" vertex="1" parent="review">
+          <mxGeometry y="30" width="220" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="r_imdb" value="imdb_id" style="text;strokeColor=none;fillColor=none;align=left;spacingLeft=10;verticalAlign=top;" vertex="1" parent="review">
+          <mxGeometry y="55" width="220" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="r_title" value="movie_title" style="text;strokeColor=none;fillColor=none;align=left;spacingLeft=10;verticalAlign=top;" vertex="1" parent="review">
+          <mxGeometry y="80" width="220" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="r_author" value="author" style="text;strokeColor=none;fillColor=none;align=left;spacingLeft=10;verticalAlign=top;" vertex="1" parent="review">
+          <mxGeometry y="105" width="220" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="r_rating" value="rating" style="text;strokeColor=none;fillColor=none;align=left;spacingLeft=10;verticalAlign=top;" vertex="1" parent="review">
+          <mxGeometry y="130" width="220" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="r_comment" value="comment" style="text;strokeColor=none;fillColor=none;align=left;spacingLeft=10;verticalAlign=top;" vertex="1" parent="review">
+          <mxGeometry y="155" width="220" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="r_date" value="created_at" style="text;strokeColor=none;fillColor=none;align=left;spacingLeft=10;verticalAlign=top;" vertex="1" parent="review">
+          <mxGeometry y="180" width="220" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- ═══════════════════════════════════════════ -->
+        <!-- CONNEXIONS                                  -->
+        <!-- ═══════════════════════════════════════════ -->
+
+        <!-- Utilisateur ── Ajouter -->
+        <mxCell id="conn_u_aj" value="" style="endArrow=none;strokeColor=#000000;" edge="1" source="user" target="ajouter" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Ajouter ── WatchItem -->
+        <mxCell id="conn_aj_w" value="" style="endArrow=none;strokeColor=#000000;" edge="1" source="ajouter" target="watchitem" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Utilisateur ── Rédiger -->
+        <mxCell id="conn_u_rd" value="" style="endArrow=none;strokeColor=#000000;" edge="1" source="user" target="rediger" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Rédiger ── Avis -->
+        <mxCell id="conn_rd_r" value="" style="endArrow=none;strokeColor=#000000;" edge="1" source="rediger" target="review" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- ═══════════════════════════════════════════ -->
+        <!-- CARDINALITES                                -->
+        <!-- ═══════════════════════════════════════════ -->
+
+        <!-- 0,n côté Utilisateur (vers Ajouter) -->
+        <mxCell id="card_u_aj" value="0,n" style="text;strokeColor=none;fillColor=none;fontColor=#d79b00;fontStyle=1;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="248" y="255" width="50" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- 1,1 côté WatchItem (vers Ajouter) -->
+        <mxCell id="card_aj_w" value="1,1" style="text;strokeColor=none;fillColor=none;fontColor=#d79b00;fontStyle=1;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="100" y="400" width="50" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- 0,n côté Utilisateur (vers Rédiger) -->
+        <mxCell id="card_u_rd" value="0,n" style="text;strokeColor=none;fillColor=none;fontColor=#d79b00;fontStyle=1;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="625" y="255" width="50" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- 1,1 côté Avis (vers Rédiger) -->
+        <mxCell id="card_rd_r" value="1,1" style="text;strokeColor=none;fillColor=none;fontColor=#d79b00;fontStyle=1;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="720" y="400" width="50" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- ═══════════════════════════════════════════ -->
+        <!-- NOTE : lien logique via imdb_id             -->
+        <!-- ═══════════════════════════════════════════ -->
+        <mxCell id="note_imdb" value="🔗 WatchItem et Avis partagent imdb_id&#xa;comme référence au film (OMDB API)&#xa;sans FK directe entre eux." style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;spacingLeft=8;rounded=1;arcSize=20;fontSize=11;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="260" y="490" width="320" height="60" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

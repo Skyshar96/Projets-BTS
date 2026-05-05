@@ -5,3 +5,9 @@
 2026-04-30 16:05:04 [INFO] Fermeture de l'application Gestion de Stock
 2026-05-03 15:02:18 [INFO] Démarrage de l'application Gestion de Stock
 2026-05-03 15:49:25 [INFO] Fermeture de l'application Gestion de Stock
+2026-05-05 13:41:16 [INFO] Démarrage de l'application Gestion de Stock
+2026-05-05 13:41:40 [INFO] Produit modifié : id=1, nom='banane', quantité=13, prix=12.90€
+2026-05-05 13:41:48 [INFO] Export CSV effectué : 1 produit(s) exporté(s) dans 'export_stock.csv'
+2026-05-05 13:42:52 [INFO] Produit ajouté : nom='kiwi', quantité=4, prix=4.50€
+2026-05-05 13:42:52 [WARNING] Stock faible à l'ajout : 'kiwi' (quantité=4 < seuil=5)
+2026-05-05 13:43:30 [INFO] Produit modifié : id=2, nom='kiwi', quantité=5, prix=4.50€
